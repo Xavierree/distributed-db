@@ -1,0 +1,62 @@
+
+> cashier-pos@1.0.0 dev
+> next dev -p 3000
+
+   ▲ Next.js 16.0.10 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://10.158.236.198:3000
+   - Environments: .env
+   - Experiments (use with caution):
+     · serverActions
+
+ ✓ Starting...
+ ✓ Ready in 703ms
+ GET / 200 in 2.2s (compile: 2.1s, render: 133ms)
+ GET / 200 in 29ms (compile: 4ms, render: 25ms)
+ GET / 200 in 31ms (compile: 4ms, render: 27ms)
+ GET / 200 in 25ms (compile: 2ms, render: 23ms)
+ GET /login 200 in 500ms (compile: 490ms, render: 11ms)
+ GET /login 200 in 36ms (compile: 14ms, render: 23ms)
+[LOGIN] Attempting login for josia at branch 101 via Central HQ
+ POST /login 200 in 344ms (compile: 2ms, render: 341ms)
+[LOGIN] Attempting login for eidel at branch 101 via Central HQ
+ POST /login 200 in 399ms (compile: 2ms, render: 397ms)
+[LOGIN] Attempting login for keagan at branch 101 via Central HQ
+[LOGIN] User not found (Central): {
+  code: 'PGRST116',
+  details: 'The result contains 0 rows',
+  hint: null,
+  message: 'Cannot coerce the result to a single JSON object'
+}
+ POST /login 200 in 363ms (compile: 3ms, render: 360ms)
+[LOGIN] Attempting login for Keagan at branch 101 via Central HQ
+ POST /login 200 in 301ms (compile: 1799µs, render: 300ms)
+ GET /pos 200 in 864ms (compile: 852ms, render: 13ms)
+[getProductsAction] Branch 101: Found 4 products
+ POST /pos 200 in 359ms (compile: 2ms, render: 356ms)
+[getProductsAction] Branch 101: Found 4 products
+ POST /pos 200 in 193ms (compile: 2ms, render: 191ms)
+ GET /login 200 in 8ms (compile: 1484µs, render: 7ms)
+[LOGIN] Attempting login for Keagan at branch 102 via Central HQ
+ POST /login 200 in 290ms (compile: 1432µs, render: 289ms)
+ GET /pos 200 in 9ms (compile: 1850µs, render: 7ms)
+[getProductsAction] Branch 102: Found 4 products
+ POST /pos 200 in 301ms (compile: 2ms, render: 299ms)
+[getProductsAction] Branch 102: Found 4 products
+ POST /pos 200 in 171ms (compile: 2ms, render: 168ms)
+ GET / 200 in 16ms (compile: 7ms, render: 9ms)
+ GET /login 200 in 10ms (compile: 1709µs, render: 8ms)
+[LOGIN] Attempting login for Travis at branch 102 via Central HQ
+ POST /login 200 in 481ms (compile: 1771µs, render: 479ms)
+ GET /pos 200 in 10ms (compile: 2ms, render: 7ms)
+[getProductsAction] Branch 102: Found 4 products
+ POST /pos 200 in 313ms (compile: 1826µs, render: 311ms)
+[getProductsAction] Branch 102: Found 4 products
+ POST /pos 200 in 184ms (compile: 3ms, render: 182ms)
+ POST /pos 200 in 363ms (compile: 1686µs, render: 362ms)
+ POST /pos 200 in 178ms (compile: 1710µs, render: 176ms)
+ POST /pos 200 in 5ms (compile: 1794µs, render: 3ms)
+ POST /pos 200 in 330ms (compile: 1548µs, render: 329ms)
+ POST /pos 200 in 336ms (compile: 1984µs, render: 334ms)
+ ✓ Compiled in 49ms
+[?25h
