@@ -138,4 +138,4 @@ chmod +x start-app.sh
 *   **Isolated Failures**: If HQ goes down, Stores continue operating 100%.
 
 ## 👥 Contributors
-Developed by the Distributed Systems Engineering Team.
+Developed by Xavierree with love.
