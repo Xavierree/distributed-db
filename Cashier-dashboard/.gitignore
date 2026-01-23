@@ -38,4 +38,3 @@ yarn-error.log*
 # Bun
 bun.lock
 -e 
-.env
