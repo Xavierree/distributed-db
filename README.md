@@ -3,8 +3,6 @@
 A production-grade, offline-first distributed Point of Sale system designed for retailers with multiple branches.
 The system ensures 100% uptime for cashiers even when the internet is down, automatically syncing data to a Central HQ when connectivity is restored.
 
-![System Health Monitor](admin-dashboard/public/system-health-preview.png)
-*(Note: Screenshot placeholder)*
 
 ## 🏗️ Architecture
 
