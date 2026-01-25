@@ -94,12 +94,19 @@ STORE_A_KEY=...
 ### 4. Running the System
 We generally run the entire cluster locally using the start script:
 
+### Linux / macOS
 ```bash
 # Make script executable
 chmod +x start-app.sh
 
 # Launch Cluster
 ./start-app.sh
+```
+
+### Windows (PowerShell)
+```powershell
+# Launch Cluster (Run as Administrator recommended for port access)
+./start-app.ps1
 ```
 
 **What happens next?**
