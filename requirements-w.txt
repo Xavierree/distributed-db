@@ -1,0 +1,15 @@
+# Distributed Database System - Windows Requirements
+# Install with: pip install -r requirements-w.txt
+
+# Core dependencies
+supabase>=2.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Windows-specific packages
+pyreadline>=2.1
+colorama>=0.4.6
+windows-curses>=2.3.0
+
+# Optional: For better terminal support on Windows
+rich>=13.5.0
