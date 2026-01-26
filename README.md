@@ -92,9 +92,10 @@ STORE_A_KEY=...
 ```
 
 ### 4. Running the System
+
+#### On Linux/macOS:
 We generally run the entire cluster locally using the start script:
 
-### Linux / macOS
 ```bash
 # Make script executable
 chmod +x start-app.sh
@@ -103,10 +104,41 @@ chmod +x start-app.sh
 ./start-app.sh
 ```
 
-### Windows (PowerShell)
+#### On Windows:
+**Step 1: Install Prerequisites**
+- **Node.js v18+**: Download from [nodejs.org](https://nodejs.org) or use:
+  ```powershell
+  winget install OpenJS.NodeJS
+  ```
+- **Python 3.9+**: Download from [python.org](https://python.org) or use:
+  ```powershell
+  winget install Python.Python.3.12
+  ```
+
+**Step 2: Install Python Dependencies**
 ```powershell
-# Launch Cluster (Run as Administrator recommended for port access)
-./start-app.ps1
+pip install -r requirements-w.txt
+```
+
+**Step 3: Install Dashboard Dependencies**
+```powershell
+cd admin-dashboard
+npm install
+cd ..
+
+cd Cashier-dashboard
+npm install
+cd ..
+```
+
+**Step 4: Launch the System**
+```powershell
+# Option A: Using PowerShell script (recommended)
+.\start-app.ps1
+
+# Option B: Run with explicit Node.js PATH
+$env:Path += ";${env:ProgramFiles}\nodejs"
+.\start-app.ps1
 ```
 
 **What happens next?**
