@@ -45,53 +45,7 @@ The system follows a resilient **star topology (Hub-and-Spoke)**:
 
 ## ⚡ Quick Start Guide
 
-### 1. Prerequisites
-*   **Node.js** v18+ (for Dashboards)
-*   **Python** 3.9+ (for Sync Engine)
-*   **Supabase** (3 projects required: Central, Store A, Store B)
-
-### 2. Database Setup
-Execute the SQL scripts in the Supabase SQL Editor for each project:
-
-*   **Central HQ Project**: Run `schema_central.sql`.
-*   **Store A Project**: Run `schema_store.sql`.
-*   **Store B Project**: Run `schema_store.sql`.
-
-> **Important**: Ensure Row Level Security (RLS) policies in `schema_store.sql` allow the service role (or public in dev) to insert data, otherwise sync will fail.
-
-### 3. Environment Configuration
-Create `.env` files in the following directories.
-
-**`admin-dashboard/.env`**:
-```env
-NEXT_PUBLIC_SUPABASE_URL=...
-NEXT_PUBLIC_SUPABASE_ANON_KEY=...
-# Store Connections for System Health Check
-NEXT_PUBLIC_STORE_A_URL=...
-NEXT_PUBLIC_STORE_A_KEY=...
-NEXT_PUBLIC_STORE_B_URL=...
-NEXT_PUBLIC_STORE_B_KEY=...
-```
-
-**`Cashier-dashboard/.env`**:
-```env
-# Point this to the LOCAL Store DB (e.g., Store A)
-NEXT_PUBLIC_SUPABASE_URL=...
-NEXT_PUBLIC_SUPABASE_ANON_KEY=...
-# Central connection for specific lookups if needed
-NEXT_PUBLIC_CENTRAL_URL=...
-NEXT_PUBLIC_CENTRAL_KEY=...
-```
-
-**`nodes/.env`** (or hardcode in `.py` for dev):
-```env
-CENTRAL_URL=...
-CENTRAL_KEY=...
-STORE_A_URL=...
-STORE_A_KEY=...
-```
-
-### 4. Running the System
+### Running the System
 
 #### On Linux/macOS:
 We generally run the entire cluster locally using the start script:
